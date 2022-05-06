@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/css';
 
 export const Popular = () => {
   const [popular, setPopular] = useState([]);
@@ -13,16 +15,34 @@ export const Popular = () => {
     );
     const data = await api.json();
     setPopular(data.recipes);
+    console.log(data.recipes);
   };
+
   return (
-    <div>
-      {popular.map((recipe) => {
-        return (
-          <div key={recipe.id}>
-            <p>{recipe.title}</p>
-          </div>
-        );
-      })}
+    <div className="wrapper">
+      <h3>Popular Picks</h3>
+
+      <Splide
+        options={{
+          perPage: 3,
+          arrows: false,
+          pagination: false,
+          drag: 'free',
+          gap: '5rem',
+        }}
+      >
+        {popular.map((recipe) => {
+          return (
+            <SplideSlide key={recipe.id}>
+              <div className="card">
+                <p>{recipe.title}</p>
+                <img src={recipe.image} alt={recipe.title} />
+                <div className="shadow"></div>
+              </div>
+            </SplideSlide>
+          );
+        })}
+      </Splide>
     </div>
   );
 };
