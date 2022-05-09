@@ -1,12 +1,13 @@
 import React from 'react';
-import { Category } from '../components/Category';
 import { Home } from './Home';
+import { Route, Routes } from 'react-router-dom';
+import { Cuisine } from './Cuisine';
 
 export const Pages = () => {
   return (
-    <div>
-      <Category />
-      <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cuisine" element={<Cuisine />} />
+    </Routes>
   );
 };
