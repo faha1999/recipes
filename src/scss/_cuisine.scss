@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+
+  .card {
+    img {
+      width: 100%;
+      border-radius: 2rem;
+    }
+
+    h4 {
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}
