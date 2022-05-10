@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home } from './Home';
-import { Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Cuisine } from './Cuisine';
 
 export const Pages = () => {
