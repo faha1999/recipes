@@ -5,7 +5,7 @@
 
   .active {
     background: linear-gradient(35deg, #494949, #313131);
-    clear: white;
+    color: white;
   }
 
   h2 {
@@ -22,15 +22,17 @@
   }
 }
 
-.button {
-  padding: 1rem 2rem;
-  color: #313131;
-  background: white;
-  border: 2px solid black;
-  margin-right: 2rem;
-  font-weight: 600;
-}
-
 .info {
-  margin-right: 10rem;
+  margin-left: 4rem;
+  display: flex;
+
+  button {
+    padding: 1rem 2rem;
+    color: #313131;
+    background: white;
+    border: 2px solid black;
+    margin-right: 2rem;
+    font-weight: 600;
+    height: 3.5rem;
+  }
 }
