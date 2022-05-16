@@ -33,11 +33,22 @@ export const Veggie = () => {
 
       <Splide
         options={{
-          perPage: 2,
+          perPage: 3,
           arrows: false,
           pagination: false,
           drag: 'free',
           gap: '5rem',
+          type: 'loop',
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+          rewind: true,
+          pauseOnHover: false,
+          breakpoints: {
+            1024: { perPage: 2, gap: '3rem' },
+            767: { perPage: 1, gap: '2rem' },
+          },
         }}
       >
         {veggie.map((recipe) => {

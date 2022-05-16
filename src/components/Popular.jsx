@@ -38,6 +38,17 @@ export const Popular = () => {
           pagination: false,
           drag: 'free',
           gap: '5rem',
+          type: 'loop',
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          rewind: true,
+          pauseOnHover: false,
+          breakpoints: {
+            1024: { perPage: 2, gap: '3rem' },
+            767: { perPage: 1, gap: '2rem' },
+          },
         }}
       >
         {popular.map((recipe) => {

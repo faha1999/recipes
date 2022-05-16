@@ -18,3 +18,10 @@ nav {
     -webkit-text-fill-color: transparent;
   }
 }
+
+@media screen and (max-width: 767px) {
+  nav {
+    justify-content: center;
+    padding: 2rem 0;
+  }
+}

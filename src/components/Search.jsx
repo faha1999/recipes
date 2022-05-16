@@ -21,7 +21,7 @@ export const Search = () => {
           value={input}
         />
       </div>
-      <h1>{input}</h1>
+      {/* <h1>{input}</h1> */}
     </form>
   );
 };
