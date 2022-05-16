@@ -4,6 +4,7 @@ import { Category } from './components/Category';
 import { Pages } from './pages/Pages';
 import { Search } from './components/Search';
 import { Nav } from './components/Nav';
+import { Footer } from './pages/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Search />
       <Category />
       <Pages />
+      <Footer />
     </>
   );
 }

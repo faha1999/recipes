@@ -1,0 +1,13 @@
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  justify-content: center;
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #f19e6a, #e94057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
