@@ -23,7 +23,7 @@ export const Searched = () => {
       {searchedRecipes.map((item) => {
         return (
           <div className="card" key={item.id}>
-            <Link to={'/recipe/' + item.id}>
+            <Link to={'/recipes/' + item.id}>
               <img src={item.image} alt="{item.title}" />
               <h4>{item.title}</h4>
             </Link>

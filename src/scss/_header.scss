@@ -1,0 +1,20 @@
+nav {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  svg {
+    font-size: 2rem;
+    color: #e94057;
+  }
+
+  .logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: linear-gradient(to right, #f19e6a, #e94057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
