@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 export const Recipes = () => {
   let params = useParams();
   const [details, setDetails] = useState({});
-  const [activeTab, setActiveTab] = useState('Instruction');
+  const [activeTab, setActiveTab] = useState('instructions');
 
   const fetchDetails = async () => {
     const data = await fetch(
@@ -26,20 +26,22 @@ export const Recipes = () => {
       </div>
 
       <div className="info">
-        <button
-          className={activeTab === 'instruction' ? 'active' : ''}
-          onClick={() => setActiveTab('instruction')}
-        >
-          Instruction
-        </button>
-        <button
-          className={activeTab === 'ingredients' ? 'active' : ''}
-          onClick={() => setActiveTab('ingredients')}
-        >
-          Ingredients
-        </button>
+        <div className="button">
+          <button
+            className={activeTab === 'instructions' ? 'active' : ''}
+            onClick={() => setActiveTab('instructions')}
+          >
+            Instructions
+          </button>
+          <button
+            className={activeTab === 'ingredients' ? 'active' : ''}
+            onClick={() => setActiveTab('ingredients')}
+          >
+            Ingredients
+          </button>
+        </div>
 
-        {activeTab === 'instruction' && (
+        {activeTab === 'instructions' && (
           <div>
             <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
             <h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
