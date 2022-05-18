@@ -45,3 +45,29 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .details {
+    display: block;
+    margin: 2rem 0;
+
+    img {
+      width: 100%;
+    }
+
+    .info {
+      margin-left: 0;
+
+      .button {
+        margin-top: 2rem;
+
+        button {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
