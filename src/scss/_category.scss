@@ -45,5 +45,17 @@
   .Category {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    .nav {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Category {
+    .nav {
+      margin-right: 0;
+    }
   }
 }
